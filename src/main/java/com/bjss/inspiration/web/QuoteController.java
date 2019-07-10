@@ -12,7 +12,7 @@ public class QuoteController {
     private final Quotes quotes;
 
     @Autowired
-    public QuoteController( final Quotes quotes ) {
+    public QuoteController(final Quotes quotes) {
         this.quotes = quotes;
     }
 
@@ -20,8 +20,5 @@ public class QuoteController {
     public Quote randomQuote() {
         return quotes.selectAtRandom();
     }
-
-    public void finalize() {
-        // should fail Checkstyle linter
-    }
+    
 }
